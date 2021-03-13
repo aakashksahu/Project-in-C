@@ -1,0 +1,101 @@
+This is readme file for Slash shell
+
+By
+	-Veerendra (163233)
+	-Aakash (163221)
+	-Nagateja (163227)
+----------------------------------------------------------------------------------------------
+
+THESE INSTRUCTIONS ARE ONLY FOR ADMIN(the person who looks after the slash shell).
+
+-> ADMIN must create the following directories before using slash shell.
+   1./tmp/Slash
+   2./tmp/Slash/chat    ---This directory stores the chatting files of the users.
+   3./tmp/Slash/bin     ---This directory contains the commands which work in slash.
+
+***In project_Slash directory,there are 3 directories named data,bin,source.
+***In the directory data,(.quotes),(.wits),(.end) files are found.(.quotes) and (.wits) are to be moved to /tmp/Slash
+    directory and (.end) must be moved to /usr/bin directory.
+***bin directory contains object files whereas source contains source code in (.c)files.    
+***All the executable files can be found in Slash directory.
+
+
+->ADMIN must keep executable ->(admin)<- in his folder.This executable allows the ADMIN to create users in Slash shell.
+ ADMIN must collect username of the shell(bash) in which they are working in and their date of birth to create a user
+ in  slash shell.   
+
+->ADMIN must keep Slash executable in /usr/bin directory 
+  and chatter,cnvrt,flashmail,myage,password,quote,shist,smail,susers,volume,wit into /tmp/Slash/bin directory.  
+
+
+----------------------------------------------------------------------------------------------------------------  
+
+FEATURES :
+
+1.User can create his account in Slash by giving user id and password and his birthdate to ADMIN.
+  Admin can create users only if the user is signed in bash.
+  Admin can delete any user.He can view all the users too.
+
+2.User can login to Slash with the userid along with the current password given by admin.
+  He can change his password ->(password)<- too.
+  User can see his last logged in time while logging in.
+
+3.Slash shell has On-The-Go claculator embedded in it.
+  The user can use it in the shell directly.
+  Simple operations such as +,-,*,^,%,/ can be used.
+  This calculator evaluates the numerical expressions with or without parentheses.
+
+4.User can see other user in slash shell using  ->(susers)<-.
+
+5.User can send mails to other users in Slash->(smail "receiver")<- and 
+  write contents of the mail then press ctrl-d to send the mail.
+
+6.User can view his mails received and status of his mails ->(smail)<-.
+  This command shows mails in inbox only when unread mails are there for user.
+  After reading mails,user can delete status of the mails which are read so that they won't be shown as unread mails.
+
+7.User can send fast mails ->(flashmail "receiver")<-.
+ This is used similarily as smail command.This notifies receiver that the received mail is an urgent one.To open inbox
+ to see only mails  ->(smail open)<-  command can be used.
+
+8.User can see the history of commands used in slash shell using  ->(shist)<-. 
+
+9.User can clear the history using  ->(shist clear)<-   command.
+
+10.User can find his age ->(myage)<-.
+
+11.User can read witty statements ->(wit)<-.User can read quotes ->(quote)<-.
+
+12.User can chat with other users in slash ->(chatter)<- or ->(slashchat)<-.
+   User can enter the receiver's name and then can send messages by typing message and pressing 'enter' key.
+   This sends a notification to the receiver.User can refresh his received messages by pressing 'enter' key.
+   To exit from chatter user must type 'exit'.
+
+13.User can convert between scientific units for different quantities.
+   It is a menu based program.
+   It offers options for different conversion in a given quatity.
+   Then gives result accordingly.
+   The command to launch this application is by typing ->(cnvrt)<- in the shell.
+
+14.User can find volume of regular 3 dimensional shapes using ->(volume [argument])<- in the shell.
+   This program uses command line arguments, therefore the user can enter the shape when he calls
+   the volume functionality. For example:->(volume cube)<-	asks the user to to enter the edge 
+   of the cube. Then the result is displayed.
+   The other shapes that can be used are sphere,hemisphere,cuboid,cone,etc...
+
+IMPROVEMENTS:
+
+1.Use signal handler to ignore interrupt in shell.
+
+2.Implementation of history using arrow keys.
+
+3.Verify the existence of bash user before creating slash user.
+
+4.Check the bug regarding the sout(Sometimes it takes more than one sout to exit).
+
+5.Expand the stored wits and qoutes.
+
+6.Interface for chat and mail can be improved.
+
+                                                ****THANK YOU**** 
+
